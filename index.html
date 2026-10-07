@@ -20,14 +20,14 @@
   </style>
 </head>
 <body>
-<iframe id="wallboard" src="https://docs.google.com/presentation/d/1T1IjhBUZfnY3nXuJowqcbqno-3QW6YqrFfx4d4Ee6QQ/embed?start=true&loop=true&delayms=5000"></iframe>
+<iframe id="wallboard" src="https://docs.google.com/presentation/d/1T1IjhBUZfnY3nXuJowqcbqno-3QW6YqrFfx4d4Ee6QQ/embed?start=true&loop=true&delayms=15000"></iframe>
   <script>
   // Odświeżanie co 30 sekund (30000 ms)
   const REFRESH_INTERVAL = 30000; 
 
   setInterval(function() {
     const iframe = document.getElementById('wallboard');
-    const baseUrl = "https://docs.google.com/presentation/d/1T1IjhBUZfnY3nXuJowqcbqno-3QW6YqrFfx4d4Ee6QQ/embed?start=true&loop=true&delayms=5000";
+    const baseUrl = "https://docs.google.com/presentation/d/1T1IjhBUZfnY3nXuJowqcbqno-3QW6YqrFfx4d4Ee6QQ/embed?start=true&loop=true&delayms=15000";
     
     // Dodajemy losowy paramter t=..., żeby Google wymusiło pobranie nowej wersji obrazu
     iframe.src = baseUrl + "&t=" + new Date().getTime();
