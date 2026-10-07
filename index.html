@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Wallboard Warszawa</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #000;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <iframe id="wallboard" src="https://docs.google.com/presentation/d/1T1IjhBUZfnY3nXuJowqcbqno-3QW6YqrFfx4d4Ee6QQ/present?start=true&loop=true&delayms=5000"></iframe>
+
+  <script>
+    // Czas odświeżania w milisekundach (300000 ms = 5 minut)
+    const REFRESH_INTERVAL = 300000; 
+
+    setInterval(function() {
+      const iframe = document.getElementById('wallboard');
+      iframe.src = iframe.src; 
+    }, REFRESH_INTERVAL);
+  </script>
+</body>
+</html>
